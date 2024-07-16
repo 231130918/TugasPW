@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pemesanan Kendaraan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .kontainer {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .peta {
+            height: 200px;
+            background-color: #e0e0e0;
+        }
+        .input-alamat {
+            padding: 15px;
+            background-color: #ffa500;
+        }
+        .input-alamat input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .pilihan {
+            padding: 15px;
+        }
+        .opsi {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .opsi:hover{
+            background-color: antiquewhite;
+        }
+        .opsi:last-child {
+            border-bottom: none;
+        }
+        .tombol-pesan {
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="kontainer">
+        <div class="peta"></div>
+        <div class="input-alamat">
+            <input type="text" placeholder="Alamat penjemputan">
+            <input type="text" placeholder="Alamat tujuan">
+        </div>
+        <div class="pilihan">
+            <div class="opsi">
+                <span>Motor (3-7 menit)</span>
+                <span>Rp 20.000</span>
+            </div>
+            <div class="opsi">
+                <span>Mobil (3-7 menit)</span>
+                <span>Rp 40.000</span>
+            </div>
+            <div class="opsi">
+                <span>Taxi (3-7 menit)</span>
+                <span>50rb - 75rb</span>
+            </div>
+        </div>
+        <button id="tombolPesan" class="tombol-pesan">Pesan Motor</button>
+    </div>
+ 
+    <script>
+        const pilihan = document.querySelectorAll('.opsi');
+        const tombolPesan = document.getElementById('tombolPesan');
+ 
+        pilihan.forEach(opsi => {
+            opsi.addEventListener('click', function() {
+                const jenisKendaraan = this.querySelector('span').textContent.split(' ')[0];
+                tombolPesan.textContent = `Pesan ${jenisKendaraan}`;
+            });
+        });
+    </script>
+</body>
+</html>

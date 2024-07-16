@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(253, 216, 174);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.payment-method:last-child {
+    border-bottom: none;
+}
+.payment-method img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.payment-method .details {
+    flex-grow: 1;
+}
+.payment-method .details h3 {
+    margin: 0;
+    font-size: 16px;
+}
+.payment-method .details p {
+    margin: 5px 0 0;
+    color: #555;
+}
+.payment-method .select {
+    font-size: 20px;
+    color: #d9534f;
+    cursor: pointer;
+}

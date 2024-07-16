@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(253, 216, 174);
+}
+a{
+    color: black;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 90px;
+}
+h1{
+    margin: 0 auto;
+}
+.judul{
+    color: rgb(95, 40, 3);
+    text-align: center;
+    font-size: 30px;
+}
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon2{
+    margin: 100px;
+    margin-bottom: 0;
+    width: 90px;
+}
+h2{
+    margin: 0 auto;
+}
+.judul1{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+.input-grup{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.icon3{
+    margin: 100px;
+    margin-bottom: 0;
+    width: 40px;
+    margin: 0;
+}
+.icon4{
+    margin: 100px;
+    margin-bottom: 0;
+    width: 40px;
+    margin: 0;
+}
+.email{
+    width: 200px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.pw{
+    width: 200px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.tekan{
+    text-align: center;
+    
+}
+.pencet:hover{
+    background-color: rgb(252, 203, 113);
+}
+.pencet{
+    text-align: center;
+    font-size: 17px;
+    padding: 3px 15px;
+    border: none;
+    background-color: rgb(253, 216, 174);
+    cursor: pointer;
+}

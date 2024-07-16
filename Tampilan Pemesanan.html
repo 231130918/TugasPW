@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style pemesanan.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alamat">
+            <div class="span">
+                <span>Tambah</span>
+            </div>
+            <input type="text" placeholder="Alamat penjemputan"><br>
+            <input type="text" placeholder="Alamat tujuan">
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.999787406202!2d98.6881708739809!3d3.5875226503035864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131b05672220d%3A0xba277a5eddb19abe!2sUniversitas%20Mikroskil%2C%20Kampus%20B!5e0!3m2!1sid!2sid!4v1719854676444!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+            <div class="pilihan">
+                <div class="opsi">
+                    <span>Motor (3-7 menit)</span>
+                    <span>Rp 20.000</span>
+                </div>
+                <div class="opsi">
+                    <span>Mobil (3-7 menit)</span>
+                    <span>Rp 40.000</span>
+                </div>
+                <div class="opsi">
+                    <span>Taxi (3-7 menit)</span>
+                    <span>50rb - 75rb</span>
+                </div>
+            </div>
+            <div class="akhir">
+                <img src="./fasilitas.png" alt="fasilitas">
+                <img src="info.png" alt="info">
+                <button id="tombolPesan" class="tombol-pesan">Pesan Motor</button>
+                <button class="bayar"><a href="Tampilan Metode Pembayaran.html">Metode Pembayaran</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const pilihan = document.querySelectorAll('.opsi');
+        const tombolPesan = document.getElementById('tombolPesan');
+ 
+        pilihan.forEach(opsi => {
+            opsi.addEventListener('click', function() {
+                const jenisKendaraan = this.querySelector('span').textContent.split(' ')[0];
+                tombolPesan.textContent =`Pesan ${jenisKendaraan}`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e0d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+.container img {
+    width: 50px;
+    height: 50px;
+}
+.container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.phone-input img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+.phone-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+.btn {
+    background-color: rgb(153, 64, 5);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(238, 154, 58);
+}
+a{
+    color: white;
+}
